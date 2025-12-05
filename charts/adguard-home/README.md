@@ -186,6 +186,14 @@ See https://artifacthub.io/packages/helm/rm3l/adguard-home?modal=install
 | extraVolumes | list | `[]` | Additional volumes |
 | fullnameOverride | string | `""` |  |
 | hostNetwork | bool | `false` | Host networking requested for the pod. Beware that setting this to true requires all container ports declared in the pod to be free on the node. This can be useful for example to expose AdGuard Home as a DHCP Server. |
+| httproutes.http.enabled | bool | `false` |  |
+| httproutes.http.hostnames | list | `[]` |  |
+| httproutes.http.parentRefs | list | `[]` |  |
+| httproutes.http.rules | list | `[]` |  |
+| httproutes.https.enabled | bool | `false` |  |
+| httproutes.https.hostnames | list | `[]` |  |
+| httproutes.https.parentRefs | list | `[]` |  |
+| httproutes.https.rules | list | `[]` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
 | image.repository | string | `"adguard/adguardhome"` |  |
 | image.tag | string | `""` |  |
